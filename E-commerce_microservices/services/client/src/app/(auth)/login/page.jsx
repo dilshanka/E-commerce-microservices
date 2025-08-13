@@ -22,8 +22,8 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-200 to-orange-100">
       <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
         <div className="text-center">
-          <div className="text-4xl font-bold text-pink-500 mb-2">🛒 ShopMate</div>
-          <h2 className="text-2xl font-semibold">Welcome Back</h2>
+          <div className="text-4xl font-bold text-black mb-2">🛒 ShopMate</div>
+          {/* <h2 className="text-2xl font-semibold">Welcome Back</h2> */}
           <p className="text-gray-500 mb-6">Login to continue shopping</p>
         </div>
 
@@ -41,7 +41,7 @@ export default function Home() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
+              placeholder="Enter your email"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500"
             />
           </div>
@@ -59,26 +59,26 @@ export default function Home() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
+              placeholder="Enter your password"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 rounded-lg transition-colors"
+            className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 rounded-lg transition-colors"
           >
             Login
           </button>
         </form>
 
         <div className="mt-4 text-center text-sm text-gray-600">
-          <a href="#" className="text-pink-500 hover:underline">
+          <a href="#" className="text-red-500 hover:underline">
             Forgot password?
           </a>
           <p className="mt-2">
             Don’t have an account?{" "}
-            <a href="#" className="text-pink-500 hover:underline">
+            <a href="#" className="text-red-500 hover:underline">
               Sign up
             </a>
           </p>
