@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <QueryClientProvider client={queryClient}>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl mx-auto px-16 lg:px-0`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[1920px] mx-auto px-16 lg:px-0`}
         >
           <nav className="flex justify-between items-center py-4 mb-8">
             <div className="flex items-center gap-4">
