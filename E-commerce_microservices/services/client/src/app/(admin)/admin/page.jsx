@@ -32,7 +32,7 @@ export default function AdminDashboard() {
   const handleLogout = () => {
   // Example: Clear auth data
   localStorage.removeItem("token");
-  router.push("/login"); // Redirect to login page
+  router.push("/"); // Redirect to login page
 };
 
   return (

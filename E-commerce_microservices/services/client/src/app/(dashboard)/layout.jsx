@@ -1,9 +1,8 @@
 "use client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Bell, House, ShoppingCart } from "lucide-react";
+import { House, ShoppingCart } from "lucide-react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import Image from "next/image";
 import Link from "next/link";
 
 const geistSans = Geist({
@@ -26,22 +25,27 @@ export default function RootLayout({ children }) {
         >
           <nav className="flex justify-between items-center py-4 mb-8">
             <div className="flex items-center gap-4">
-              <Image src="/logo.png" alt="logo" width={50} height={50} />
+              {/* <Image src="/logo.png" alt="logo" width={50} height={50} /> */}
               <Link href="/" className="text-2xl font-black">
                 Shop Mate
               </Link>
             </div>
             <div className="flex items-center gap-6">
-              <House className="w-5 h-5" />
-              <Bell className="w-5 h-5" />
-              <ShoppingCart className="w-5 h-5" />
-              <Image
+              <Link href="/dashboard" className="text-2xl font-black">
+                <House />
+              </Link>
+              <Link href="/cart" className="text-2xl font-black">
+                <ShoppingCart />
+              </Link>
+              {/* <House className="w-6 h-6 cursor-pointer" href="/dashboard" />
+              <ShoppingCart className="w-6 h-6 cursor-pointer" href="/cart" /> */}
+              {/* <Image
                 src="/avatar.png"
                 alt="avatar"
                 width={32}
                 height={32}
                 className="rounded-full border border-gray-300"
-              />
+              /> */}
             </div>
           </nav>
           {children}
